@@ -75,9 +75,9 @@
 
 
 /*             document.getElementById("dias").innerHTML = dias;
- */            document.getElementById("horas").innerHTML = horas;
-            document.getElementById("minutos").innerHTML = minutos;
-            document.getElementById("segundos").innerHTML = segundos;
+ */             document.getElementById("horas").innerHTML = horas < 10 ? '0' + horas : horas;
+            document.getElementById("minutos").innerHTML = minutos  < 10 ? '0' + minutos : minutos;
+            document.getElementById("segundos").innerHTML = segundos  < 10 ? '0' + segundos : segundos;
 
 
         },1000);
