@@ -48,12 +48,19 @@
 
             </div>
 
-            <video muted autoplay loop>
+            <video  id="inicio" muted autoplay loop>
 
                     <source src="./Recursos/Logo-contador.mp4"
                     type="video/mp4">
 
             </video>
+
+            <video id="cierre" hidden muted autoplay >
+
+                <source src="./Recursos/Cierre-Contador.mp4"
+                type="video/mp4">
+
+        </video>
 
             <div class="capa"></div>
 
@@ -75,12 +82,19 @@
 
 
 /*             document.getElementById("dias").innerHTML = dias;
- */             document.getElementById("horas").innerHTML = horas < 10 ? '0' + horas : horas;
+ */            document.getElementById("horas").innerHTML = horas < 10 ? '0' + horas : horas;
             document.getElementById("minutos").innerHTML = minutos  < 10 ? '0' + minutos : minutos;
             document.getElementById("segundos").innerHTML = segundos  < 10 ? '0' + segundos : segundos;
 
+            if(horas=="00" || horas<0 & minutos =="00"|| minutos <0 & segundos == "00" || segundos <0){
+                const videoFinal = document.getElementById("cierre")
+               videoFinal.removeAttribute("hidden")
+            }
+
 
         },1000);
+
+        
 
     </script>
 </body>
