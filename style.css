@@ -18,10 +18,12 @@ video {
     left: 0;
     width: 100%;
     object-fit: cover;
-    z-index: -1;
+    
 }
 
-
+#inicio {
+    z-index: -1;
+}
 
 .launch-time {
     
@@ -64,3 +66,4 @@ video {
     color: rgb(7, 84, 185);
    
 }
+
