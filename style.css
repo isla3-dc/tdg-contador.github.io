@@ -1,0 +1,66 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+#main {
+    min-height: 100vh;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+.launch-time {
+    
+    display: flex; 
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+   
+    
+}
+
+.faltan {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-left:35% ;
+    color: rgb(7, 84, 185);
+    align-items: center;
+}
+
+.contador {
+    display: flex;
+    flex-direction: row;
+    color: rgb(7, 84, 185);
+}
+
+.dato {
+    margin: 25px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dato p {
+    font-size: 110px;
+    margin-top: -14px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(7, 84, 185);
+   
+}
